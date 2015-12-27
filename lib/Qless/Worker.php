@@ -618,6 +618,11 @@ class Worker {
         $processTitle = 'qless-' . Qless::VERSION . ': ' . $status;
         cli_set_process_title($processTitle);
     }
+
+    protected function getProcessType()
+    {
+        return $this->processType;
+    }
 }
 
 function pcntl_sig_name($sig_no) {
