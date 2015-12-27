@@ -1,11 +1,4 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: paul
- * Date: 11/4/13
- * Time: 12:14 PM
- */
-
 class TestWorkerImpl {
     public function myPerformMethod($job){
         echo "here in worker performMethod\n\n";
@@ -32,4 +25,4 @@ class TestWorkerImpl {
         sleep(5);
         exit(1);
     }
-} 
+}
